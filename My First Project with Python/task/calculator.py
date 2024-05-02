@@ -1,9 +1,13 @@
-print('''
-Prices:
-Bubblegum: $2
-Toffee: $0.2
-Ice cream: $5
-Milk chocolate: $4
-Doughnut: $2.5
-Pancake: $3.2
-''')
+products = {'Bubblegum': 202,
+            'Toffee': 118,
+            'Ice cream': 2250,
+            'Milk chocolate': 1680,
+            'Doughnut': 1075,
+            'Pancake': 80}
+
+total_income = sum(products.values())
+print('Earned amount:')
+for key, value in products.items():
+    print(f'{key}: ${value}')
+print()
+print(f'Income: ${total_income}')
